@@ -1,0 +1,227 @@
+# Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
+   [exec] (Amarok) {/usr/bin/amarok} </home/yoshi/Images/amarok.xpm>
+   [exec] (Dolphin) { dolphin } </home/yoshi/Images/folder.xpm>
+   [exec] (Firefox) { iceweasel} </home/yoshi/Images/firefox.xpm>
+   [separator] () {}
+   [submenu] (Developpement) {}
+      [exec] (Eclipse Android) { /home/yoshi/Logiciels/Eclipse-android/eclipse/eclipse} </home/yoshi/Logiciels/Eclipse-android/eclipse/icon.xpm>
+      [exec] (Netbeans) { /home/yoshi/netbeans-7.1.2/bin/netbeans } </home/yoshi/Images/netbeans.xpm>
+      [exec] (Vim) { xterm -e vim } </home/yoshi/Images/vim.xpm>
+      [exec] (Localhost) { /home/yoshi/Logiciels/LAMP_interface/localhost-indicator } </home/yoshi/Images/localhost.xpm>
+   [end]
+   [submenu] (Émulateurs de terminaux) {}
+      [exec] (Gnome Terminal) {/usr/bin/gnome-terminal} </usr/share/pixmaps/gnome-terminal.xpm>
+      [exec] (XTerm) {xterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+      [exec] (X-Terminal as root (GKsu\)) {/usr/bin/gksu -u root /usr/bin/x-terminal-emulator} </usr/share/pixmaps/gksu-debian.xpm>
+      [exec] (XTerm (Unicode\)) {uxterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+   [end]
+   [submenu] (System) {}
+        [submenu] (Administration) {}
+            [exec] (Aptitude) { x-terminal-emulator -T "Aptitude" -e /usr/bin/aptitude} <>
+            [exec] (Debian Task selector) { x-terminal-emulator -T "Debian Task selector" -e su-to-root -c tasksel} <>
+            [exec] (DSL/PPPoE configuration tool) { x-terminal-emulator -T "DSL/PPPoE configuration tool" -e /usr/sbin/pppoeconf} </usr/share/pixmaps/pppoeconf.xpm>
+            [exec] (Editres) {editres} <>
+            [exec] (fluxconf) {/usr/bin/fluxconf} <>
+            [exec] (fluxkeys) {/usr/bin/fluxkeys} <>
+            [exec] (fluxmenu) {/usr/bin/fluxmenu} <>
+            [exec] (Gnome Control Center) {/usr/bin/gnome-control-center} </usr/share/pixmaps/control-center2.xpm>
+            [exec] (GNOME Network Tool) {/usr/bin/gnome-nettool} </usr/share/pixmaps/gnome-nettool.xpm>
+            [exec] (HPLIP File printing) {/usr/bin/hp-print} </usr/share/pixmaps/HPmenu.xpm>
+            [exec] (pppconfig) { x-terminal-emulator -T "pppconfig" -e su-to-root -p root -c /usr/sbin/pppconfig} <>
+            [exec] (Shares Admin) {/usr/bin/shares-admin} </usr/share/gnome-system-tools/pixmaps/shares.xpm>
+            [exec] (Time Admin) {/usr/bin/time-admin} </usr/share/gnome-system-tools/pixmaps/time.xpm>
+            [exec] (User accounts Admin) {/usr/bin/users-admin} </usr/share/gnome-system-tools/pixmaps/users.xpm>
+            [exec] (Xclipboard) {xclipboard} <>
+            [exec] (Xfontsel) {xfontsel} <>
+            [exec] (Xkill) {xkill} <>
+            [exec] (Xrefresh) {xrefresh} <>
+         [end]
+         [submenu] (Gestionnaires de paquets) {}
+            [exec] (Synaptic Package Manager) {/usr/bin/gksu /usr/sbin/synaptic} </usr/share/synaptic/pixmaps/synaptic_32x32.xpm>
+         [end]
+         [submenu] (Matériel) {}
+            [exec] (HPLIP Toolbox) {/usr/bin/hp-toolbox} </usr/share/pixmaps/HPmenu.xpm>
+            [exec] (Xvidtune) {xvidtune} <>
+         [end]
+         [submenu] (Paramétrage de la langue) {}
+            [exec] (im-switch) { x-terminal-emulator -T "im-switch" -e /usr/bin/im-switch} <>
+         [end]
+         [submenu] (Sécurité) {}
+            [exec] (Seahorse) {/usr/bin/seahorse} </usr/share/pixmaps/seahorse.xpm>
+         [end]
+         [submenu] (Surveillance) {}
+            [exec] (Conky) { x-terminal-emulator -T "Conky" -e /usr/bin/conky} <>
+            [exec] (GNOME Log Viewer) {/usr/bin/gnome-system-log} </usr/share/pixmaps/gnome-system-log.xpm>
+            [exec] (GNOME system monitor) {/usr/bin/gnome-system-monitor} <>
+            [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+            [exec] (Xload) {xload} <>
+         [end]
+
+   [end]
+
+   [submenu] (Applications) {}
+      [submenu] (Accessibilité) {}
+         [exec] (Xmag) {xmag} <>
+      [end]
+      [submenu] (Bureautique) {}
+         [exec] (HPLIP Fax address book) {/usr/bin/hp-fab} </usr/share/pixmaps/HPmenu.xpm>
+         [exec] (HPLIP Fax utility) {/usr/bin/hp-sendfax} </usr/share/pixmaps/HPmenu.xpm>
+         [exec] (OpenOffice.org Calc) {/usr/bin/oocalc} </usr/share/icons/hicolor/32x32/apps/openofficeorg3-calc.xpm>
+         [exec] (OpenOffice.org Impress) {/usr/bin/ooimpress} </usr/share/icons/hicolor/32x32/apps/openofficeorg3-impress.xpm>
+         [exec] (OpenOffice.org Writer) {/usr/bin/oowriter} </usr/share/icons/hicolor/32x32/apps/openofficeorg3-writer.xpm>
+      [end]
+      [submenu] (Dessin et image) {}
+         [exec] (GNOME Screenshot Tool) {/usr/bin/gnome-panel-screenshot} <>
+         [exec] (ImageMagick) {/usr/bin/display logo:} </usr/share/pixmaps/display.xpm>
+         [exec] (OpenOffice.org Draw) {/usr/bin/oodraw} </usr/share/icons/hicolor/32x32/apps/openofficeorg3-draw.xpm>
+         [exec] (X Window Snapshot) {xwd | xwud} <>
+      [end]
+      [submenu] (Éditeurs) {}
+         [exec] (Gedit) {/usr/bin/gedit} </usr/share/pixmaps/gedit-icon.xpm>
+         [exec] (Nano) { x-terminal-emulator -T "Nano" -e /bin/nano} </usr/share/nano/nano-menu.xpm>
+         [exec] (Xedit) {xedit} <>
+      [end]
+      [submenu] (Émulateurs de terminaux) {}
+         [exec] (Gnome Terminal) {/usr/bin/gnome-terminal} </usr/share/pixmaps/gnome-terminal.xpm>
+         [exec] (XTerm) {xterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+         [exec] (X-Terminal as root (GKsu\)) {/usr/bin/gksu -u root /usr/bin/x-terminal-emulator} </usr/share/pixmaps/gksu-debian.xpm>
+         [exec] (XTerm (Unicode\)) {uxterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+      [end]
+      [submenu] (Gestion de fichiers) {}
+         [exec] (Baobab) {/usr/bin/baobab} </usr/share/pixmaps/baobab.xpm>
+         [exec] (Brasero) {/usr/bin/brasero} <>
+         [exec] (File-Roller) {/usr/bin/file-roller} </usr/share/pixmaps/file-roller.xpm>
+         [exec] (GNOME Search Tool) {/usr/bin/gnome-search-tool} </usr/share/pixmaps/gsearchtool.xpm>
+         [exec] (Nautilus) {/usr/bin/nautilus --no-desktop --browser} </usr/share/pixmaps/nautilus.xpm>
+      [end]
+      [submenu] (Interpréteurs de commandes) {}
+         [exec] (Bash) { x-terminal-emulator -T "Bash" -e /bin/bash --login} <>
+         [exec] (Dash) { x-terminal-emulator -T "Dash" -e /bin/dash -i} <>
+         [exec] (Sh) { x-terminal-emulator -T "Sh" -e /bin/sh --login} <>
+      [end]
+      [submenu] (Langue écrite) {}
+         [exec] (Character map) {/usr/bin/gucharmap} <>
+         [exec] (GNOME Dictionary) {/usr/bin/gnome-dictionary} </usr/share/pixmaps/gdict.xpm>
+      [end]
+      [submenu] (Lecteurs) {}
+         [exec] (Evince) {/usr/bin/evince} </usr/share/pixmaps/evince.xpm>
+         [exec] (Eye of GNOME) {/usr/bin/eog} </usr/share/pixmaps/gnome-eog.xpm>
+         [exec] (F-Spot) {/usr/bin/f-spot} <>
+         [exec] (Xditview) {xditview} <>
+      [end]
+      [submenu] (Programmation) {}
+         [exec] (Netbeans) {/usr/local/netbeans-7.2.1/bin/netbeans} </home/yoshi/Images/netbeans.xpm>
+         [exec] (Eclipse android) {/home/yoshi/Logiciels/Eclipse/eclipse-android} </home/yoshi/Logiciels/Eclipse/eclipse-android/icon.xpm>
+         [exec] (Erlang Shell) { x-terminal-emulator -T "Erlang Shell" -e /usr/bin/erl} </usr/share/pixmaps/erlang.xpm>
+         [exec] (GDB) { x-terminal-emulator -T "GDB" -e /usr/bin/gdb} <>
+         [exec] (Python (v2.6\)) { x-terminal-emulator -T "Python (v2.6)" -e /usr/bin/python2.6} </usr/share/pixmaps/python2.6.xpm>
+         [exec] (Tclsh8.4) { x-terminal-emulator -T "Tclsh8.4" -e /usr/bin/tclsh8.4} <>
+         [exec] (TkWish8.4) {x-terminal-emulator -e /usr/bin/wish8.4} <>
+      [end]
+      [submenu] (Réseau) {}
+         [submenu] (Communication) {}
+            [exec] (Evolution) {/usr/bin/evolution} </usr/share/pixmaps/evolution.xpm>
+            [exec] (Telnet) { x-terminal-emulator -T "Telnet" -e /usr/bin/telnet} <>
+            [exec] (Terminal Server Client) {/usr/bin/tsclient -f} </usr/share/pixmaps/tsclient.xpm>
+            [exec] (Xbiff) {xbiff} <>
+         [end]
+         [submenu] (Navigateurs web) {}
+            [exec] (Firefox) {/usr/bin/firefox} </home/yoshi/Images/firefox.xpm>
+         [end]
+         [submenu] (Transfert de fichiers) {}
+            [exec] (Transmission BitTorrent Client (GTK\)) {/usr/bin/transmission} </usr/share/pixmaps/transmission.xpm>
+         [end]
+      [end]
+      [submenu] (Sciences) {}
+         [submenu] (Mathématiques) {}
+            [exec] (Bc) { x-terminal-emulator -T "Bc" -e /usr/bin/bc} <>
+            [exec] (Dc) { x-terminal-emulator -T "Dc" -e /usr/bin/dc} <>
+            [exec] (GCalcTool) {/usr/bin/gcalctool} </usr/share/pixmaps/gcalctool.xpm>
+            [exec] (OpenOffice.org Math) {/usr/bin/oomath} </usr/share/icons/hicolor/32x32/apps/openofficeorg3-math.xpm>
+            [exec] (Xcalc) {xcalc} <>
+         [end]
+      [end]
+      [submenu] (Son et musique) {}
+         [exec] (Amarok) {/usr/bin/amarok} <>
+         [exec] (gmix (Gnome 2.0 Mixer\)) {/usr/bin/gnome-volume-control} </usr/share/pixmaps/gnome-mixer.xpm>
+         [exec] (grecord (GNOME 2.0 Recorder\)) {/usr/bin/gnome-sound-recorder} </usr/share/pixmaps/gnome-grecord.xpm>
+         [exec] (Rhythmbox) {/usr/bin/rhythmbox} </usr/share/pixmaps/rhythmbox-small.xpm>
+      [end]
+      [submenu] (Système) {}
+         [submenu] (Administration) {}
+            [exec] (Aptitude) { x-terminal-emulator -T "Aptitude" -e /usr/bin/aptitude} <>
+            [exec] (Debian Task selector) { x-terminal-emulator -T "Debian Task selector" -e su-to-root -c tasksel} <>
+            [exec] (DSL/PPPoE configuration tool) { x-terminal-emulator -T "DSL/PPPoE configuration tool" -e /usr/sbin/pppoeconf} </usr/share/pixmaps/pppoeconf.xpm>
+            [exec] (Editres) {editres} <>
+            [exec] (fluxconf) {/usr/bin/fluxconf} <>
+            [exec] (fluxkeys) {/usr/bin/fluxkeys} <>
+            [exec] (fluxmenu) {/usr/bin/fluxmenu} <>
+            [exec] (Gnome Control Center) {/usr/bin/gnome-control-center} </usr/share/pixmaps/control-center2.xpm>
+            [exec] (GNOME Network Tool) {/usr/bin/gnome-nettool} </usr/share/pixmaps/gnome-nettool.xpm>
+            [exec] (HPLIP File printing) {/usr/bin/hp-print} </usr/share/pixmaps/HPmenu.xpm>
+            [exec] (pppconfig) { x-terminal-emulator -T "pppconfig" -e su-to-root -p root -c /usr/sbin/pppconfig} <>
+            [exec] (Shares Admin) {/usr/bin/shares-admin} </usr/share/gnome-system-tools/pixmaps/shares.xpm>
+            [exec] (Time Admin) {/usr/bin/time-admin} </usr/share/gnome-system-tools/pixmaps/time.xpm>
+            [exec] (User accounts Admin) {/usr/bin/users-admin} </usr/share/gnome-system-tools/pixmaps/users.xpm>
+            [exec] (Xclipboard) {xclipboard} <>
+            [exec] (Xfontsel) {xfontsel} <>
+            [exec] (Xkill) {xkill} <>
+            [exec] (Xrefresh) {xrefresh} <>
+         [end]
+         [submenu] (Gestionnaires de paquets) {}
+            [exec] (Synaptic Package Manager) {/usr/bin/gksu /usr/sbin/synaptic} </usr/share/synaptic/pixmaps/synaptic_32x32.xpm>
+         [end]
+         [submenu] (Matériel) {}
+            [exec] (HPLIP Toolbox) {/usr/bin/hp-toolbox} </usr/share/pixmaps/HPmenu.xpm>
+            [exec] (Xvidtune) {xvidtune} <>
+         [end]
+         [submenu] (Paramétrage de la langue) {}
+            [exec] (im-switch) { x-terminal-emulator -T "im-switch" -e /usr/bin/im-switch} <>
+         [end]
+         [submenu] (Sécurité) {}
+            [exec] (Seahorse) {/usr/bin/seahorse} </usr/share/pixmaps/seahorse.xpm>
+         [end]
+         [submenu] (Surveillance) {}
+            [exec] (Conky) { x-terminal-emulator -T "Conky" -e /usr/bin/conky} <>
+            [exec] (GNOME Log Viewer) {/usr/bin/gnome-system-log} </usr/share/pixmaps/gnome-system-log.xpm>
+            [exec] (GNOME system monitor) {/usr/bin/gnome-system-monitor} <>
+            [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+            [exec] (Xload) {xload} <>
+         [end]
+      [end]
+      [submenu] (Vidéo) {}
+         [exec] (Totem) {/usr/bin/totem} </usr/share/pixmaps/totem.xpm>
+         [exec] (VLC media player) {/usr/bin/qvlc} </usr/share/vlc/vlc.xpm>
+      [end]
+   [end]
+   [submenu] (Gestionnaires de fenêtres) {}
+      [restart] (FluxBox)  {/usr/bin/startfluxbox}
+   [end]
+   [submenu] (Jeux) {}
+      [submenu] (Cartes) {}
+         [exec] (Gnome FreeCell) {/usr/games/sol --variation freecell} </usr/share/pixmaps/freecell.xpm>
+         [exec] (Gnome Solitaire Games) {/usr/games/sol} </usr/share/pixmaps/aisleriot.xpm>
+      [end]
+      [submenu] (Casse-tête) {}
+         [exec] (gbrainy) {/usr/games/gbrainy} </usr/share/pixmaps/gbrainy.xpm>
+         [exec] (Gnome Sudoku) {/usr/games/gnome-sudoku} </usr/share/pixmaps/gnome-sudoku.xpm>
+         [exec] (Gnomine) {/usr/games/gnomine} </usr/share/pixmaps/gnomine.xpm>
+         [exec] (Quadrapassel) {/usr/games/quadrapassel} </usr/share/pixmaps/quadrapassel.xpm>
+      [end]
+      [submenu] (Jouets) {}
+         [exec] (Oclock) {oclock} <>
+         [exec] (Xclock (analog\)) {xclock -analog} <>
+         [exec] (Xclock (digital\)) {xclock -digital -update 1} <>
+         [exec] (Xeyes) {xeyes} <>
+         [exec] (Xlogo) {xlogo} <>
+      [end]
+      [submenu] (Réflexion) {}
+         [exec] (Gnome Mahjongg) {/usr/games/mahjongg} </usr/share/pixmaps/mahjongg.xpm>
+      [end]
+   [end]
