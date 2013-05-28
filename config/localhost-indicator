@@ -1,0 +1,220 @@
+#!/usr/bin/python2
+# -*- coding: utf-8 -*-
+
+import gtk
+import os
+import webbrowser 
+
+class ControlPanel(gtk.Window):
+    counter = 1
+
+    def __init__(self, parent=None):
+
+	# Configure GTK: add images to the buttons
+	#gtk.settings_get_default().props.gtk_button_images = True
+
+        # Create the toplevel window
+        gtk.Window.__init__(self)
+        try:
+            self.set_screen(parent.get_screen())
+        except AttributeError:
+            self.connect('destroy', lambda *w: gtk.main_quit())
+
+        self.set_title("Web Server Control Panel")
+	#self.set_icon_from_file('/usr/share/icons/ubuntu-mono-dark/status/24/gnome-netstatus-tx.svg') # Set the window icon
+        self.set_border_width(25)
+        main_vbox = gtk.VBox()
+        self.add(main_vbox)
+
+	# Localhost frame
+        frame_localhost = gtk.Frame("http://localhost")
+        main_vbox.pack_start(frame_localhost, padding=10)
+
+        vbox = gtk.VBox(False, 16)
+        vbox.set_border_width(16)
+        frame_localhost.add(vbox)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='localhost')
+        button.connect('clicked', self.localhost_open)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='phpMyAdmin')
+        button.connect('clicked', self.phpmyadmin_open)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-help')
+        button.connect('clicked', self.phpmyadmin_help)
+        hbox.pack_start(button, False, False, 0)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='gtk-open')
+        button.connect('clicked', self.httpdocs)
+        hbox.pack_start(button, False, False, 0)
+
+	# Apache frame
+        frame_apache = gtk.Frame("Apache")
+        main_vbox.pack_start(frame_apache, padding=10)
+
+        vbox = gtk.VBox(False, 16)
+        vbox.set_border_width(16)
+        frame_apache.add(vbox)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='gtk-execute')
+        button.connect('clicked', self.apache_start)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-stop')
+        button.connect('clicked', self.apache_stop)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-refresh')
+        button.connect('clicked', self.apache_restart)
+        hbox.pack_start(button, False, False, 0)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='gtk-open')
+        button.connect('clicked', self.apache_config)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-help')
+        button.connect('clicked', self.apache_help)
+        hbox.pack_start(button, False, False, 0)
+
+	# Mysql frame
+        frame_mysql = gtk.Frame("Mysql")
+        main_vbox.pack_start(frame_mysql, padding=10)
+
+        vbox = gtk.VBox(False, 16)
+        vbox.set_border_width(16)
+        frame_mysql.add(vbox)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='gtk-execute')
+        button.connect('clicked', self.mysql_start)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-stop')
+        button.connect('clicked', self.mysql_stop)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-refresh')
+        button.connect('clicked', self.mysql_restart)
+        hbox.pack_start(button, False, False, 0)
+ 
+	# PHP frame
+        frame_php = gtk.Frame("PHP")
+        main_vbox.pack_start(frame_php, padding=10)
+
+        vbox = gtk.VBox(False, 16)
+        vbox.set_border_width(16)
+        frame_php.add(vbox)
+
+        hbox = gtk.HBox(False, 16)
+        vbox.pack_start(hbox)
+        button = gtk.Button(stock='gtk-open')
+        button.connect('clicked', self.php_config)
+        hbox.pack_start(button, False, False, 0)
+
+        button = gtk.Button(stock='gtk-help')
+        button.connect('clicked', self.php_help)
+        hbox.pack_start(button, False, False, 0)
+
+        self.show_all()
+
+# _______________________
+#
+# Actions :
+#
+    def localhost_open(self, button):
+		webbrowser.open( 'http://localhost' ) 
+
+    def httpdocs(self, button):
+	os.system("dolphin ~/Public")
+
+    def apache_config(self, button):
+        self.config(button, "apache", "/etc/apache2/apache2.conf")
+
+    def php_config(self, button):
+        self.config(button, "PHP", "/etc/php/php.ini")
+
+    def php_help(self, button):
+		webbrowser.open( 'http://php.net/configuration.file' )
+
+    def config(self, button, program, configfile):
+		self.command(button, 
+			"sudo gedit " + configfile,
+			"Open & edit the " + program + " configuration with the command:")
+
+    def apache_help(self, button):
+		webbrowser.open( 'http://httpd.apache.org/docs/trunk/mod/directives.html' ) 
+
+    def apache_start(self, button):
+		self.start(button, "httpd", "Apache HTTP Server")
+
+    def apache_stop(self, button):
+		self.stop(button, "httpd", "Apache HTTP Server")
+
+    def apache_restart(self, button):
+		self.restart(button, "httpd",	"Apache HTTP Server")
+
+    def mysql_start(self, button):
+		self.start(button, "mysqld", "MySQL Database")
+
+    def mysql_stop(self, button):
+		self.stop(button, "mysqld", "MySQL Database")
+
+    def mysql_restart(self, button):
+		self.restart(button, "mysqld", "MySQL Database")
+
+    def phpmyadmin_open(self, button):
+		webbrowser.open( 'http://localhost/phpmyadmin' )
+
+    def phpmyadmin_help(self, button):
+		webbrowser.open( 'https://help.ubuntu.com/community/phpMyAdmin' )
+
+    # Functions
+    def start(self, button, service, name):
+		self.command(button, 
+			"sudo systemctl start "+service,
+                	name+" will be started with the command:")
+
+    def stop(self, button, service, name):
+		self.command(button, 
+			"sudo systemctl stop "+service,
+			name+" will be stopped with the command:",
+			"warning")
+
+    def restart(self, button, service, name):
+		self.command(button, 
+			"sudo systemctl restart "+service,
+			name+" will be restarted with the command:")
+
+    def command(self, button, cmd, comment, msg = "info"):
+		#PrintedCmd = ("gk"==cmd[:2]) and cmd[2:] or cmd # Remove "gk" in the printed command, if it's there.
+		if (msg=="info"):
+			dialog = gtk.MessageDialog(self,
+	                gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                	gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+	                comment+"\n\n"+cmd[2:])
+		else:
+			dialog = gtk.MessageDialog(self,
+	                gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+			gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
+        	        comment+"\n\n"+cmd[2:])
+                dialog.run()
+                dialog.destroy()
+                os.system(cmd)
+
+def main():
+    ControlPanel()
+    gtk.main()
+
+if __name__ == '__main__':
+    main()
