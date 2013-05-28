@@ -12,6 +12,7 @@ OnToolbar Mouse4 :PrevWorkspace
 OnToolbar Mouse5 :NextWorkspace
 
 # alt + left/right click to move/resize a window
+OnTitleBar Mouse1 : MacroCmd {raise} {focus} {StartMoving}
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 
@@ -115,4 +116,4 @@ Control Mod1 Right : NextWorkspace
 Control Mod1 Left : PrevWorkspace
 Control Mod4 F12 : Exec /home/yoshi/Logiciels/LAMP_interface/localhost-indicator
 Control Mod1 R : Exec dolphin
-Control Mod1 F : Exec /usr/bin/iceweasel
+Control Mod1 F : Exec firefox
