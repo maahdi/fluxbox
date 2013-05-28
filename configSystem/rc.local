@@ -1,0 +1,4 @@
+#/etc/rc.local
+#Activation du pad numérique sur les consoles virtuelles
+
+for vc in /dev/vc/*; do /usr/bin/setleds -D +num < "$vc"; done
