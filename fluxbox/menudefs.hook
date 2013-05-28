@@ -1,7 +1,7 @@
 # Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
    [exec] (Amarok) {/usr/bin/amarok} </home/yoshi/Images/amarok.xpm>
    [exec] (Dolphin) { dolphin } </home/yoshi/Images/folder.xpm>
-   [exec] (Firefox) { iceweasel} </home/yoshi/Images/firefox.xpm>
+   [exec] (Firefox) { /usr/bin/firefox} </home/yoshi/Images/firefox.xpm>
    [separator] () {}
    [submenu] (Developpement) {}
       [exec] (Eclipse Android) { /home/yoshi/Logiciels/Eclipse-android/eclipse/eclipse} </home/yoshi/Logiciels/Eclipse-android/eclipse/icon.xpm>
@@ -9,7 +9,7 @@
       [exec] (Vim) { xterm -e vim } </home/yoshi/Images/vim.xpm>
       [exec] (Localhost) { /home/yoshi/Logiciels/LAMP_interface/localhost-indicator } </home/yoshi/Images/localhost.xpm>
    [end]
-   [submenu] (Émulateurs de terminaux) {}
+   [submenu] (Emulateurs de terminaux) {}
       [exec] (Gnome Terminal) {/usr/bin/gnome-terminal} </usr/share/pixmaps/gnome-terminal.xpm>
       [exec] (XTerm) {xterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
       [exec] (X-Terminal as root (GKsu\)) {/usr/bin/gksu -u root /usr/bin/x-terminal-emulator} </usr/share/pixmaps/gksu-debian.xpm>
