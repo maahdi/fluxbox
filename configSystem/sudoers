@@ -21,7 +21,7 @@ yoshi	ALL=(ALL) ALL
 # (Note that later entries override this, so you might need to move
 # it further down)
 yoshi   ALL=(root) NOPASSWD:/sbin/shutdown
-yoshi   ALL=(root) NOPASSWD:/sbin/reboot,/usr/bin/systemctl
+yoshi   ALL=(root) NOPASSWD:/sbin/reboot
 %sudo ALL=(ALL) ALL
 #
 #includedir /etc/sudoers.d

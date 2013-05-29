@@ -136,7 +136,7 @@ class ControlPanel(gtk.Window):
 		webbrowser.open( 'http://localhost' ) 
 
     def httpdocs(self, button):
-	os.system("dolphin ~/Public")
+	os.system("nautilus ~/Public")
 
     def apache_config(self, button):
         self.config(button, "apache", "/etc/apache2/apache2.conf")
@@ -149,7 +149,7 @@ class ControlPanel(gtk.Window):
 
     def config(self, button, program, configfile):
 		self.command(button, 
-			"sudo gedit " + configfile,
+			"gksudo gedit " + configfile,
 			"Open & edit the " + program + " configuration with the command:")
 
     def apache_help(self, button):
@@ -182,18 +182,18 @@ class ControlPanel(gtk.Window):
     # Functions
     def start(self, button, service, name):
 		self.command(button, 
-			"sudo systemctl start "+service,
+			"gksudo systemctl start "+service,
                 	name+" will be started with the command:")
 
     def stop(self, button, service, name):
 		self.command(button, 
-			"sudo systemctl stop "+service,
+			"gksudo systemctl stop "+service,
 			name+" will be stopped with the command:",
 			"warning")
 
     def restart(self, button, service, name):
 		self.command(button, 
-			"sudo systemctl restart "+service,
+			"gksudo systemctl restart "+service,
 			name+" will be restarted with the command:")
 
     def command(self, button, cmd, comment, msg = "info"):
