@@ -5,7 +5,9 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/yoshi/.Xmodmap"
+#bug des fois des raccourcis disparaisse
+# desinstaller et reinstaller xorg-server-utils et xorg-xmodmap
+#xmodmap "/home/yoshi/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -18,7 +20,7 @@ xmodmap "/home/yoshi/.Xmodmap"
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 #Installation avec feh (dispo dans les dépôts : crée un .fehbg
-/bin/bash /home/yoshi/.fehbg &
+#/bin/bash /home/yoshi/.fehbg &
 conky &
 xrdb /home/yoshi/.Xresources &
 exec fluxbox

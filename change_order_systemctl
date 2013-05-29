@@ -1,0 +1,21 @@
+Les fichiers se situe dans /usr/lib/systemd/ ou dans /etc/systemd/
+
+ ##  Example  /usr/lib/systemd/system/httpd.service##
+ 
+[Unit]
+Description=Apache Web Server
+After=network.target remote-fs.target nss-lookup.target
+## Mettre After=httpd.service dans getty.service
+Before=getty.service
+
+[Service]
+Type=forking
+PIDFile=/run/httpd/httpd.pid
+ExecStart=/usr/sbin/apachectl start
+ExecStop=/usr/sbin/apachectl graceful-stop
+ExecReload=/usr/sbin/apachectl graceful
+PrivateTmp=true
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
