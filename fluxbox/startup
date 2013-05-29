@@ -19,7 +19,7 @@ xmodmap "/home/yoshi/.Xmodmap"
 # Because it is the last app you have to run it with ''exec'' before it.
 fbsetbg -l
 conky &
-xrdb /home/yoshi/.Xdefaults
+xrdb /home/yoshi/.Xresources
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/yoshi/.fluxbox/log"
