@@ -1,13 +1,13 @@
 # Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
-   [exec] (Amarok) {/usr/bin/amarok} </home/yoshi/Images/amarok.xpm>
-   [exec] (Dolphin) { dolphin } </home/yoshi/Images/folder.xpm>
-   [exec] (Firefox) { /usr/bin/firefox} </home/yoshi/Images/firefox.xpm>
+   [exec] (Amarok) {/usr/bin/amarok} </home/yoshi/.icons/amarok.xpm>
+   [exec] (Dolphin) { dolphin } </home/yoshi/.icons/folder.xpm>
+   [exec] (Firefox) { /usr/bin/firefox} </home/yoshi/.icons/firefox.xpm>
    [separator] () {}
    [submenu] (Developpement) {}
       [exec] (Eclipse Android) { /home/yoshi/Logiciels/Eclipse-android/eclipse/eclipse} </home/yoshi/Logiciels/Eclipse-android/eclipse/icon.xpm>
-      [exec] (Netbeans) { /home/yoshi/netbeans-7.1.2/bin/netbeans } </home/yoshi/Images/netbeans.xpm>
-      [exec] (Vim) { xterm -e vim } </home/yoshi/Images/vim.xpm>
-      [exec] (Localhost) { /home/yoshi/Logiciels/LAMP_interface/localhost-indicator } </home/yoshi/Images/localhost.xpm>
+      [exec] (Netbeans) { netbeans } </home/yoshi/.icons/netbeans.xpm>
+      [exec] (Vim) { xterm -e vim } </home/yoshi/.icons/vim.xpm>
+      [exec] (Localhost) { /home/yoshi/Logiciels/LAMP_interface/localhost-indicator } </home/yoshi/.icons/localhost.xpm>
    [end]
    [submenu] (Emulateurs de terminaux) {}
       [exec] (Gnome Terminal) {/usr/bin/gnome-terminal} </usr/share/pixmaps/gnome-terminal.xpm>
@@ -113,7 +113,7 @@
          [exec] (Xditview) {xditview} <>
       [end]
       [submenu] (Programmation) {}
-         [exec] (Netbeans) {/usr/local/netbeans-7.2.1/bin/netbeans} </home/yoshi/Images/netbeans.xpm>
+         [exec] (Netbeans) {/usr/local/netbeans-7.2.1/bin/netbeans} </home/yoshi/.icons/netbeans.xpm>
          [exec] (Eclipse android) {/home/yoshi/Logiciels/Eclipse/eclipse-android} </home/yoshi/Logiciels/Eclipse/eclipse-android/icon.xpm>
          [exec] (Erlang Shell) { x-terminal-emulator -T "Erlang Shell" -e /usr/bin/erl} </usr/share/pixmaps/erlang.xpm>
          [exec] (GDB) { x-terminal-emulator -T "GDB" -e /usr/bin/gdb} <>
@@ -129,7 +129,7 @@
             [exec] (Xbiff) {xbiff} <>
          [end]
          [submenu] (Navigateurs web) {}
-            [exec] (Firefox) {/usr/bin/firefox} </home/yoshi/Images/firefox.xpm>
+            [exec] (Firefox) {/usr/bin/firefox} </home/yoshi/.icons/firefox.xpm>
          [end]
          [submenu] (Transfert de fichiers) {}
             [exec] (Transmission BitTorrent Client (GTK\)) {/usr/bin/transmission} </usr/share/pixmaps/transmission.xpm>
