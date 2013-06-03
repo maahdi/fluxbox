@@ -30,12 +30,13 @@ alias rm='rm -I'
 alias ln='ln -i'  #Affiche si une destination n'est pas la
 alias cls='echo -ne "\033c"'  #vide xterm
 alias :q=' exit'
-alias pac='pacman -S'  #Install One package or more
+alias pac='sudo pacman -S'  #Install One package or more
 alias pacu='sudo /usr/bin/pacman -Syu'  #Upgrade and install One or more packages
 alias pacs='sudo /usr/bin/pacman -Ss'  #Recherche dans les dépots
 alias paci='sudo /usr/bin/pacman -Si'  #Informations sur un package
 alias pacc='sudo /usr/bin/pacman -Scc' #Supprimer tous les packages en caches non-installés
 alias paclf='sudo /usr/bin/pacman -Ql' #liste tous les paquets installés par un paquets
+alias grepd='grep -d recurse -n' #Recherche un /pattern/ depuis un /chemin/
 
 #check the window size after each command and, if necessary,
 #update the values of LINES and COLUMNS
