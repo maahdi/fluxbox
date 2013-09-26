@@ -1,0 +1,16 @@
+[begin] (-fluxbox-)
+[include] (~/.fluxbox/menudefs.hook)
+[separator] () {}
+[config] (configuration)
+[submenu] (Styles) {}
+    [stylesdir] (/usr/share/fluxbox/styles)
+    [stylesdir] (~/.fluxbox/styles)
+[end]
+    [workspaces] (workspaces)
+[separator] () {}
+[restart] (Restart FluxBox)  {/usr/bin/startfluxbox}
+[submenu] (Eteindre)
+    [exit] (Logout)
+    [exec] (Reboot) {sudo reboot}
+    [exec] (Shutdown) {sudo shutdown -h now}
+[end]

@@ -1,3 +1,4 @@
+!XTERM
 XTerm*locale: true
 xterm*termName: xterm-256color
 xterm*VT100.geometry: 80x20
@@ -6,25 +7,60 @@ XTerm*background: #1c1c1c
 xterm*faceName: "Liberation Mono:size=10:antiailias=false"
 xterm*font: 7x13
 
+!urxvt
+urxvt*termName:     rxvt-unicode-256color
+urxvt*loginShell:   true
+urxvt*geometry: 74x27
 
+urxvt*scrollBar:    true
+urxvt*scrollBar_right: true
+urxvt*saveLines:    65535
+urxvt*cursorBlink:  false
+urxvt*urgentOnBell: true
+urxvt*urlLauncher:  /usr/bin/firefox
+urxvt*matcher.button:   1
+urxvt*cutchars: '"'()*<>[]{|}
+urxvt*cursorColor:  #DCDCCC
+urxvt*colorUL: #ffffff
+urxvt*transparent: true
+urxvt*shading: 50
+urxvt*background: #3f3f3f
+urxvt*foreground: #dcdccc
+!black + red
+urxvt*color0: #1E2320
+urxvt*color1: #a01717
+!green + yellow
+urxvt*color2: #60b48a
+urxvt*color3: #dfaf8f
+!blue + purple
+urxvt*color4: #506070
+urxvt*color5: #dc8cc3
+!cyan + white
+urxvt*color6: #8cd0d3
+urxvt*color7: #dcdccc
+!bright-black + bright-red
+urxvt*color8: #709080
+urxvt*color9: #dca3a3
+!bright-gree, + bright-yellow
+urxvt*color10: #c3bf9f
+urxvt*color11: #f0dfaf
+!bright-blue + bright-purple
+urxvt*color12: #94dff3
+urxvt*color13: #ec93d3
+!bright-cyan + bright-white
+urxvt*color14: #93e0e3
+urxvt*color15: #ffffff
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+!urxvt*depth: 32
+!urxvt*background: rgba:0000/0000/0000/dddd
+urxvt*font: xft:DejaVu Sans Mono:size=10
+urxvt*boldFont: xft:DejaVu Sans Mono:size=10
+urxvt*perl-ext-common: default,matcher,clipboard
+urxvt*keysym.C-S-c: perl:clipboard:copy
+urxvt*keysym.C-S-v: perl:clipboard:paste
+!antiscrolling
+urxvt*scrollTtyOutput: false
+urxvt*scrollTtyKeypress: true
+urxvt*scrollWithBuffer: true
 
 

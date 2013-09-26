@@ -1,0 +1,20 @@
+uugixturxvtc -e urxvtc -e /bin/bash -c "tmux new ranger"
+r"
+urxvtc -e && tmux -c ranger
+tmux -c ranger
+urxvtc
+urxvtc -c "tmux new ranger"
+urxvtc -c tmux new ranger
+urxvtc -e "tmux new ranger"
+urxvtc -e "tmux new" -c ranger
+urxvtc -e "tmux ranger"
+urxvtc -e tmux ranger
+urxvtc -e tmux -c ranger
+xvtc -e "tmux new" -c ranger
+urxvtc -e "tmux ranger"
+urxvtc -e tmux ranger
+urxvtc -e /bin/bash -c "tmux ranger"
+urxvtc -e /bin/bash -c "tmux new ranger"
+urxvtc -e /bin/bash -c "tmux ne -n Ranger ranger"
+urxvtc -e /bin/bash -c "tmux new -n Ranger -c ranger"
+filezilla

@@ -1,9 +1,7 @@
 # Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
-   [exec] (Vim) { xterm -e vim} </home/yoshi/.icons/vim.xpm>
-   [exec] (Ranger) { urxvtc -e /bin/bash -c "tmux new -s Ranger 'sudo ranger'" } </home/yoshi/.icons/folder.xpm>
+   [exec] (Vim) { xterm -e vim } </home/yoshi/.icons/vim.xpm>
+   [exec] (Dolphin) { dolphin } </home/yoshi/.icons/folder.xpm>
    [exec] (Firefox) { /usr/bin/firefox} </home/yoshi/.icons/firefox.xpm>
-   [exec] (FileZilla) { /usr/bin/filezilla} </home/yoshi/.icons/filezilla.xpm>
-   [exec] (Opera) {/usr/bin/opera} </home/yoshi/.icons/opera.xpm>
    [separator] () {}
    [exec] (Amarok) {/usr/bin/amarok} </home/yoshi/.icons/amarok.xpm>
    [exec] (Vlc) { vlc } </home/yoshi/.icons/vlc.xpm>
