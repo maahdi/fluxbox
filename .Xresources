@@ -1,0 +1,7 @@
+XTerm*locale: true
+xterm*termName: xterm-256color
+xterm*VT100.geometry: 80x20
+XTerm*foreground: white
+XTerm*background: #1c1c1c
+xterm*faceName: "Liberation Mono:size=10:antiailias=false"
+xterm*font: 7x13
