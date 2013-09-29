@@ -11,7 +11,7 @@
    [submenu] (Developpement) {}
       [exec] (Eclipse Android) { /home/yoshi/Logiciels/Eclipse-android/eclipse/eclipse} </home/yoshi/Logiciels/Eclipse-android/eclipse/icon.xpm>
       [exec] (Netbeans) { netbeans } </home/yoshi/.icons/netbeans.xpm>
-      [exec] (Localhost) { /home/yoshi/Logiciels/LAMP_interface/localhost-indicator } </home/yoshi/.icons/localhost.xpm>
+      [exec] (Localhost) { gksudo /home/yoshi/.logiciels/localhost-indicator } </home/yoshi/.icons/localhost.xpm>
       [exec] (Glade) { /usr/bin/glade } </home/yoshi/.icons/glade.xpm>
    [end]
    [submenu] (My Applications) {}

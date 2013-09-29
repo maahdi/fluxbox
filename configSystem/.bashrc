@@ -11,7 +11,7 @@ complete -cf sudo
 TERM=rxvt-unicode-256color
 ##Modified Commands ##{{
 alias tmux='tmux attach'
-alias vim=' sudo xterm -e vim'
+alias vim='xterm -e vim'
 alias diff='colordiff'
 alias grep='grep --color=auto'
 alias more='less'
@@ -46,3 +46,4 @@ shopt -s checkwinsize
 
 #Auto cd
 shopt -s autocd
+export LANG=fr_FR.UTF-8

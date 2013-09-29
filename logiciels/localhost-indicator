@@ -1,5 +1,6 @@
 #!/usr/bin/python2
 # -*- coding: utf-8 -*-
+#Lancer avec gksudo le programme ou rajouter gksudo dans les commandes du programme
 
 import gtk
 import os
@@ -133,84 +134,84 @@ class ControlPanel(gtk.Window):
 # Actions :
 #
     def localhost_open(self, button):
-		webbrowser.open( 'http://localhost' ) 
+        webbrowser.open("http://localhost")
 
     def httpdocs(self, button):
-	os.system("nautilus ~/Public")
+        os.system("nautilus ~/Public")
 
     def apache_config(self, button):
-        self.config(button, "apache", "/etc/apache2/apache2.conf")
+        self.config(button, "apache", "/etc/httpd/conf/httpd.conf")
 
     def php_config(self, button):
         self.config(button, "PHP", "/etc/php/php.ini")
 
     def php_help(self, button):
-		webbrowser.open( 'http://php.net/configuration.file' )
+        webbrowser.open( 'http://php.net/configuration.file' )
 
     def config(self, button, program, configfile):
-		self.command(button, 
-			"gksudo gedit " + configfile,
-			"Open & edit the " + program + " configuration with the command:")
+        self.command(button,
+            "gedit " + configfile,
+            "Open & edit the " + program + " configuration with the command:")
 
     def apache_help(self, button):
-		webbrowser.open( 'http://httpd.apache.org/docs/trunk/mod/directives.html' ) 
+        webbrowser.open( 'http://httpd.apache.org/docs/trunk/mod/directives.html' ) 
 
     def apache_start(self, button):
-		self.start(button, "httpd", "Apache HTTP Server")
+        self.start(button, "httpd", "Apache HTTP Server")
 
     def apache_stop(self, button):
-		self.stop(button, "httpd", "Apache HTTP Server")
+        self.stop(button, "httpd", "Apache HTTP Server")
 
     def apache_restart(self, button):
-		self.restart(button, "httpd",	"Apache HTTP Server")
+        self.restart(button, "httpd",	"Apache HTTP Server")
 
     def mysql_start(self, button):
-		self.start(button, "mysqld", "MySQL Database")
+        self.start(button, "mysqld", "MySQL Database")
 
     def mysql_stop(self, button):
-		self.stop(button, "mysqld", "MySQL Database")
+        self.stop(button, "mysqld", "MySQL Database")
 
     def mysql_restart(self, button):
-		self.restart(button, "mysqld", "MySQL Database")
+        self.restart(button, "mysqld", "MySQL Database")
 
     def phpmyadmin_open(self, button):
-		webbrowser.open( 'http://localhost/phpmyadmin' )
+        webbrowser.open( 'http://localhost/phpmyadmin' )
 
     def phpmyadmin_help(self, button):
-		webbrowser.open( 'https://help.ubuntu.com/community/phpMyAdmin' )
+        webbrowser.open( 'https://help.ubuntu.com/community/phpMyAdmin' )
 
     # Functions
     def start(self, button, service, name):
-		self.command(button, 
-			"gksudo systemctl start "+service,
-                	name+" will be started with the command:")
+        self.command(button, 
+            "systemctl start "+service,
+            name+" will be started with the command:")
 
     def stop(self, button, service, name):
-		self.command(button, 
-			"gksudo systemctl stop "+service,
-			name+" will be stopped with the command:",
-			"warning")
+        self.command(button, 
+            "systemctl stop "+service,
+            name+" will be stopped with the command:",
+            "warning")
 
     def restart(self, button, service, name):
-		self.command(button, 
-			"gksudo systemctl restart "+service,
-			name+" will be restarted with the command:")
+        self.command(button, 
+            "systemctl restart "+service,
+            name+" will be restarted with the command:")
 
     def command(self, button, cmd, comment, msg = "info"):
 		#PrintedCmd = ("gk"==cmd[:2]) and cmd[2:] or cmd # Remove "gk" in the printed command, if it's there.
-		if (msg=="info"):
-			dialog = gtk.MessageDialog(self,
-	                gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
-                	gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
-	                comment+"\n\n"+cmd[2:])
-		else:
-			dialog = gtk.MessageDialog(self,
-	                gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
-			gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
-        	        comment+"\n\n"+cmd[2:])
-                dialog.run()
-                dialog.destroy()
-                os.system(cmd)
+        if (msg=="info"):
+            dialog = gtk.MessageDialog(self,
+                    gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                    gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+                    comment+"\n\n"+cmd[2:])
+        else:
+            dialog = gtk.MessageDialog(self,
+                    gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                    gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
+                    comment+"\n\n"+cmd[2:])
+        dialog.run()
+        dialog.destroy()
+        os.system(cmd)
 
 def main():
     ControlPanel()

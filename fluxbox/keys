@@ -51,7 +51,7 @@ Mod1 F1 :Exec urxvtc
 # open a dialog to run programs
 Mod1 F2 :Exec fbrun
 #Mod1 F3 :Exec urxvtc -e /bin/bash -c "tmux new ranger"
-Mod1 F3 :Exec opera
+Mod1 F3 :Exec urxvtc -e tmux
 Mod1 F5 :Exec filezilla
 
 # volume settings, using common keycodes
@@ -114,10 +114,20 @@ Control Mod4 F10 :TakeToWorkspace 10
 Control Mod4 F11 :TakeToWorkspace 11
 #Control Mod4 F12 :TakeToWorkspace 12
 
-Control Mod4 W :RootMenu
-Control Mod4 X : HideMenus
+Control Mod4 W :ToggleCmd {RootMenu}{HideMenus}
+#Control Mod4 X : HideMenus
 Control Mod1 Right : NextWorkspace
 Control Mod1 Left : PrevWorkspace
-Control Mod4 F12 : Exec /home/yoshi/Logiciels/LAMP_interface/localhost-indicator
+Control Mod4 F12 : Exec gksudo /home/yoshi/.logiciels/localhost-indicator
 Control Mod1 R : Exec urxvtc -e /bin/bash -c "tmux new ranger"
 Control Mod1 F : Exec opera
+#
+#Envoi sur le bureau 5 et ouvre vim, ensuite maximise la fenetre
+Control Mod1 V :ToggleCmd {MacroCmd {Workspace 5} {Exec xterm -e vim}} {Maximize}
+
+#Envoyer au workspace correspondant Control pour numero touche numérique
+Control 87 :Workspace 1
+Control 88 :Workspace 2
+Control 89 :Workspace 3
+Control 83 :Workspace 4
+Control 84 :Workspace 5

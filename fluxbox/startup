@@ -19,8 +19,7 @@
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
-#Installation avec feh (dispo dans les dépôts : crée un .fehbg
-#/bin/bash /home/yoshi/.fehbg &
+
 conky &
 feh --bg-fill /home/yoshi/Dropbox/icons/constellation.png
 xrdb /home/yoshi/.Xresources &

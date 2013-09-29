@@ -17,6 +17,7 @@ urxvt*scrollBar_right: true
 urxvt*saveLines:    65535
 urxvt*cursorBlink:  false
 urxvt*urgentOnBell: true
+!Manque le launcher match ou un truc du genre
 urxvt*urlLauncher:  /usr/bin/firefox
 urxvt*matcher.button:   1
 urxvt*cutchars: '"'()*<>[]{|}
